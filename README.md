@@ -13,7 +13,7 @@ It currently support all endpoints except everything related to real-time subscr
 Just add the following to your project.clj file in the _dependencies_ section:
 
 ```
-[instagram-api "0.1.1"]
+[instagram-api "0.1.6"]
 ```
 
 ## Examples
