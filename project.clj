@@ -1,4 +1,4 @@
-(defproject instagram-api/instagram-api "0.1.6"
+(defproject instagram-api/instagram-api "0.1.7"
   :description "Clojure Instagram interface"
   :url "https://github.com/Rydgel/Clojure-Instagram-API"
   :license {:name "Eclipse Public License"
@@ -7,5 +7,5 @@
             [lein-swank "1.4.4"]
             [lein-eclipse "1.0.0"]]
   :dependencies [[org.clojure/clojure "1.4.0"]
-                 [org.clojure/data.json "0.2.1"]
+                 [org.clojure/data.json "0.2.3"]
                  [http.async.client "0.4.5"]])
