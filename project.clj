@@ -8,4 +8,5 @@
             [lein-eclipse "1.0.0"]]
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.clojure/data.json "0.2.3"]
-                 [http.async.client "0.4.5"]])
+                 [http.async.client "0.4.5"]]
+  :profiles {:dev {:source-paths ["dev"]}})
