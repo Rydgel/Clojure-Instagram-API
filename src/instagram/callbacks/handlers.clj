@@ -82,7 +82,7 @@
   [response]
 
   (let [status (ac/status response)
-        body (json/read-str (ac/string response))
+        body (json/read-str (ac/string response) :key-fn keyword)
 
         desc (-> body :meta :error_message)
         code (-> body :meta :code)

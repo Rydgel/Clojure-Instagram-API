@@ -1,4 +1,4 @@
-(defproject instagram-api/instagram-api "0.1.7"
+(defproject instagram-api/instagram-api "0.1.8"
   :description "Clojure Instagram interface"
   :url "https://github.com/Rydgel/Clojure-Instagram-API"
   :license {:name "Eclipse Public License"
