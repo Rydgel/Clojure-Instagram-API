@@ -14,5 +14,10 @@ pom.xml
 .settings
 .DS_Store
 instagram-api.iml
-.idea
+/.idea
+*.iml
+/out
+/.idea_modules
+/.classpath
+/.project
 .nrepl-port
