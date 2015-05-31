@@ -127,8 +127,7 @@
     `(defn ~name
        [& {:as args#}]
 
-       (let [arg-map# (merge ~rest-map
-                             args#)
+       (let [arg-map# (merge ~rest-map args#)
              api-context# (assert-throw (:api arg-map#) "must include an ':api' entry in the params")
              uri# (make-uri api-context# ~resource-path)]
 

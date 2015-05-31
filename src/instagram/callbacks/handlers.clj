@@ -92,7 +92,7 @@
      (and req code desc) (format "Instagram responded to request '%s' with error %d: %s" req code desc)
      (and code desc) (format "Instagram responded to request with error %d: %s" code desc)
      desc (format "Instagram responded to request with error: %s" desc)
-     :default "Instagram responded to request with an unknown error")))
+     :default (format "%s" (ac/string response)))))
 
 
 (defn handle-response
