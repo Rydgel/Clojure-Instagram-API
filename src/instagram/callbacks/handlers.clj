@@ -30,7 +30,7 @@
   "This takes a response and returns a map of the headers and the json-parsed body"
   [response & {:keys [to-json?] :or {to-json? true}}]
 
-  (let [body-trans (if to-json? json/read-str identity)]
+  (let [body-trans (if to-json? #(json/read-str % :key-fn keyword) identity)]
     (hash-map :headers (ac/headers response)
               :status (ac/status response)
               :body (body-trans (ac/string response)))))
@@ -41,7 +41,7 @@
   "This takes a response and returns the json-parsed body"
   [response]
 
-  (json/read-str (ac/string response)))
+  (json/read-str (ac/string response) :key-fn keyword))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

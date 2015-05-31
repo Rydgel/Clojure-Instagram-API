@@ -13,7 +13,7 @@ It currently support all endpoints except everything related to real-time subscr
 Just add the following to your project.clj file in the _dependencies_ section:
 
 ```
-[instagram-api "0.1.8"]
+[instagram-api "0.2.0"]
 ```
 
 ## Examples
@@ -68,7 +68,7 @@ Clone the project and run `lein jar`, and the library will be build into a jar.
 
 ```
 $ lein jar
-Created /Users/rydgel/Projects/Clojure/instagram-api/target/instagram-api-0.1.1.jar
+Created /Users/rydgel/Projects/Clojure/instagram-api/target/instagram-api-0.2.0.jar
 ```
 
 ## Tests
@@ -97,7 +97,7 @@ Ran 36 tests containing 93 assertions.
 
 ## License
 
-Copyright © 2013 Jérôme Mahuet
+Copyright © 2013-2015 Jérôme Mahuet
 
 Follow [@phollow](https://twitter.com/phollow) if you want to stay up-to-date or
 ask something.
